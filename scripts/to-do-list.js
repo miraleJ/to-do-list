@@ -46,6 +46,7 @@ class ToDoList {
     create(str) {
         const task = new Task(str);
         this.taskList.push(task);
+        return task;
     }
 
     delete(str) {
